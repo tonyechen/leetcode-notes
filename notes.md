@@ -10,6 +10,29 @@ Space Complexity = Auxiliary space + Space use by input values
 * O(N) (scale with argument, usually like arrays or similar datatypes)
 
 # Algorithms
+## Greedy Algorithms
+A greedy algorithm is an approach for solving a problem by selecting the best option available at the moment. It doesn't worry whether the current best result willl bring the overall optimal result.
+
+It works in a top-down approach and nevever reverses the earlier decision even if the choice is wrong. 
+1. Greedy Choice Property
+    - an optimal solution to the problem can be found by choosing the bets choice at each step without reconsidering the previous teps once chosen, the peoblem can be solved using a greedy approach
+2. Optimal Substrucutre
+    - if the optimal overal solution to the problem corresponds to the optimal solution to its subproblems, then the problem can be solv3ed using a greedy approach
+
+## Dynamic Programming
+A technique in computer programming for solving a given complex problem by breaking it down into subproblems and memorizing the outcomes of those subproblems to prevent repeating computations
+
+Properties of Dynamic Programming
+1. Optimal Substructure
+    - a problem is said to have an optimal substructure if we can formulate a recurrence relation for it
+2. Overlapping subproblem
+    - A problem is said to have an overlapping subproblem if the subproblems reoccur when implementing a solution to the larger problem
+
+Tabulation vs Memoization
+
+Tabulation = Bottom Up Approach
+
+Memoization = Top down Approach
 
 # Data Structures
 
