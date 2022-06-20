@@ -30,9 +30,9 @@ Properties of Dynamic Programming
 
 Tabulation vs Memoization
 
-Tabulation = Bottom Up Approach
+Tabulation = Bottom Up Approach, create a 2D array
 
-Memoization = Top down Approach
+Memoization = Top down Approach, memorize a value at a time
 
 # Data Structures
 
