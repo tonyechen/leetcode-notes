@@ -11,6 +11,7 @@ Space Complexity = Auxiliary space + Space use by input values
 
 # Algorithms
 ## Greedy Algorithms
+---
 A greedy algorithm is an approach for solving a problem by selecting the best option available at the moment. It doesn't worry whether the current best result willl bring the overall optimal result.
 
 It works in a top-down approach and nevever reverses the earlier decision even if the choice is wrong. 
@@ -20,6 +21,7 @@ It works in a top-down approach and nevever reverses the earlier decision even i
     - if the optimal overal solution to the problem corresponds to the optimal solution to its subproblems, then the problem can be solv3ed using a greedy approach
 
 ## Dynamic Programming
+---
 A technique in computer programming for solving a given complex problem by breaking it down into subproblems and memorizing the outcomes of those subproblems to prevent repeating computations
 
 Properties of Dynamic Programming
@@ -33,6 +35,13 @@ Tabulation vs Memoization
 Tabulation = Bottom Up Approach, create a 2D array
 
 Memoization = Top down Approach, memorize a value at a time
+
+## Kadane's Algorithm:
+---
+Solving Maximum Subarray Problems
+
+
+link: https://medium.com/@rsinghal757/kadanes-algorithm-dynamic-programming-how-and-why-does-it-work-3fd8849ed73d
 
 # Data Structures
 
