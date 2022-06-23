@@ -1,7 +1,9 @@
 # Topics I need to practice:
-* Linked Lists
+- Linked Lists
+- Dynamic Programming
+- Greedy Algorithm
 
-
+# Notes
 ## Space Complexity
 Total amount of memory space used by an algorithm/program including the space of input values for execution
 
@@ -14,7 +16,7 @@ Space Complexity = Auxiliary space + Space use by input values
 ---
 A greedy algorithm is an approach for solving a problem by selecting the best option available at the moment. It doesn't worry whether the current best result willl bring the overall optimal result.
 
-It works in a top-down approach and nevever reverses the earlier decision even if the choice is wrong. 
+It works in a top-down approach and never reverses the earlier decision even if the choice is wrong. 
 1. Greedy Choice Property
     - an optimal solution to the problem can be found by choosing the bets choice at each step without reconsidering the previous teps once chosen, the peoblem can be solved using a greedy approach
 2. Optimal Substrucutre
@@ -37,11 +39,16 @@ Tabulation = Bottom Up Approach, create a 2D array
 Memoization = Top down Approach, memorize a value at a time
 
 ## Kadane's Algorithm:
----
 Solving Maximum Subarray Problems
 
 
 link: https://medium.com/@rsinghal757/kadanes-algorithm-dynamic-programming-how-and-why-does-it-work-3fd8849ed73d
+
+
+## Floyd's Cycle Finding Algorithm (Tortoise-Haire Algorithm)
+A pointer algorithm that only uses two pointers, moving through the sequence and different speeds. This algorithm is used to find a loop inside a linked list with O(n) time and O(1) space, but can also be adapted to solve other problems like finding duplicates inside a list.
+
+Link: https://www.geeksforgeeks.org/floyds-cycle-finding-algorithm/#:~:text=How%20Does%20Floyd's%20Cycle%20Finding%20Algorithm%20Works%3F&text=The%20Fast%20pointer%20may%20reach,exists%20in%20the%20linked%20list.
 
 # Data Structures
 
@@ -55,3 +62,7 @@ pre-requisite:
 - can only be used in a very specific scenario, where the size of window for computation is fixed throughout the complete nested loop, Only then the time complexity can be reduced.
 
 General Idea: Calculate a section of an array, then slide the section over by a fixed number of elements, subtract the old items and add the new items.
+
+## Tail Recursion
+A specific form of recursing where the recursive call is the last action in the function. The benefit of tail recursion is that for certain programming languages such as c++ the complier could optimize the memory allocation of call stack by reusing the same space for every recursive call, rather than creating the space for each one, allowing one to obtain the constant space complexity O(1) for the overhead of the recursive calls.
+- not supported by python or java
