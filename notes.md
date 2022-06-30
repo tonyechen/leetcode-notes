@@ -3,6 +3,8 @@
 - Dynamic Programming
 - Greedy Algorithm
 
+## Top 100 liked question set:
+Link: https://leetcode.com/problem-list/top-100-liked-questions/?sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D
 # Notes
 ## Space Complexity
 Total amount of memory space used by an algorithm/program including the space of input values for execution
@@ -41,15 +43,26 @@ Memoization = Top down Approach, memorize a value at a time
 ## Kadane's Algorithm:
 Solving Maximum Subarray Problems
 
-
 link: https://medium.com/@rsinghal757/kadanes-algorithm-dynamic-programming-how-and-why-does-it-work-3fd8849ed73d
 
 
 ## Floyd's Cycle Finding Algorithm (Tortoise-Haire Algorithm)
+----
 A pointer algorithm that only uses two pointers, moving through the sequence and different speeds. This algorithm is used to find a loop inside a linked list with O(n) time and O(1) space, but can also be adapted to solve other problems like finding duplicates inside a list.
 
 Link: https://www.geeksforgeeks.org/floyds-cycle-finding-algorithm/#:~:text=How%20Does%20Floyd's%20Cycle%20Finding%20Algorithm%20Works%3F&text=The%20Fast%20pointer%20may%20reach,exists%20in%20the%20linked%20list.
 
+## Boyer-Moore Voting Algorithm
+---
+one of the most popular optimal algorithms used to find the majority element among the given elements that have more than N/2 occurences.
+
+It workds on the fact that if an element occurs more than N/2 times, it means that the remaining elements other than this would definitely be less than N/2:
+- First, choose a candidate from the given set of elements if it is the same as the candidate element, increase the votes. Otherwise, decrease the votes if votes become 0, select another new element as the new candidate. 
+- if it is not given that majority element exists, we must loop through the array again and count the occurences of candidates to make sure that it is a majority element
+### Intuition Behind Working:
+Why can we disregard the prefix elements? Because we have more majority elements than the minority elements, so by disregarding prefixes, we are ignoring an equal amount of majority and minority elements, therefore, the majority element will still be the majority element in the following elements after we throw away the prefixes. We will eventually run out of minority elements but will still have majority element. And we cannot discard more majority elements than minority elements.
+
+Link: https://leetcode.com/problems/majority-element/solution/
 # Data Structures
 
 # Computational techniques
