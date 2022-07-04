@@ -3,7 +3,7 @@
 - Dynamic Programming
 - Greedy Algorithm
 
-## Top 100 liked question set:
+## Top 100 liked question set (order from easy to hard):
 Link: https://leetcode.com/problem-list/top-100-liked-questions/?sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D
 # Notes
 ## Space Complexity
@@ -75,6 +75,11 @@ pre-requisite:
 - can only be used in a very specific scenario, where the size of window for computation is fixed throughout the complete nested loop, Only then the time complexity can be reduced.
 
 General Idea: Calculate a section of an array, then slide the section over by a fixed number of elements, subtract the old items and add the new items.
+
+## Two Pointers:
+---
+## Two runners pointer technique:
+Imagine we have 2 runners one fast and one slow, running down the nodes of the Linked List. In each second, the faster runner moves down 2 nodes, and the slow runner just 1 node, By the time the faster runner gets to the end of the list, the slower runner will be half way. By representing the runners as pointers, and moving them down the list at the coreesponding speeds. we can use this trick to find the middle of the list.
 
 ## Tail Recursion
 A specific form of recursing where the recursive call is the last action in the function. The benefit of tail recursion is that for certain programming languages such as c++ the complier could optimize the memory allocation of call stack by reusing the same space for every recursive call, rather than creating the space for each one, allowing one to obtain the constant space complexity O(1) for the overhead of the recursive calls.
