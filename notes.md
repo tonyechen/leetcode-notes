@@ -22,7 +22,7 @@ It works in a top-down approach and never reverses the earlier decision even if 
 1. Greedy Choice Property
     - an optimal solution to the problem can be found by choosing the bets choice at each step without reconsidering the previous teps once chosen, the peoblem can be solved using a greedy approach
 2. Optimal Substrucutre
-    - if the optimal overal solution to the problem corresponds to the optimal solution to its subproblems, then the problem can be solv3ed using a greedy approach
+    - if the optimal overall solution to the problem corresponds to the optimal solution to its subproblems, then the problem can be solved using a greedy approach
 
 ## Dynamic Programming
 ---
