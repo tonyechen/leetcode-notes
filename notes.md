@@ -63,6 +63,22 @@ It workds on the fact that if an element occurs more than N/2 times, it means th
 Why can we disregard the prefix elements? Because we have more majority elements than the minority elements, so by disregarding prefixes, we are ignoring an equal amount of majority and minority elements, therefore, the majority element will still be the majority element in the following elements after we throw away the prefixes. We will eventually run out of minority elements but will still have majority element. And we cannot discard more majority elements than minority elements.
 
 Link: https://leetcode.com/problems/majority-element/solution/
+
+## BackTracking Algorithm
+---
+A backtracking algorithm is a problem-solving algorithm that uses a **brute force approach** for finding the desired output. It tries out all the possible solutions and chooses the desired/best solutions (notice plural). If the current solution is not suitable, then backtrack and try other solutions. Thus, recusring is usually used in this approach. 
+
+This approach is used to sovle problems that have multiple solutions. If you want an optimal solution, you must go for **Dynamic Programming**
+
+````
+Backtrack(x)
+    if x is not a solution
+        return false
+    if x is a new solution
+        add to list of solutions
+    backtrack(expand x)
+````
+
 # Data Structures
 
 # Computational techniques
