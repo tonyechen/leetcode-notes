@@ -56,7 +56,7 @@ Link: https://www.geeksforgeeks.org/floyds-cycle-finding-algorithm/#:~:text=How%
 ---
 one of the most popular optimal algorithms used to find the majority element among the given elements that have more than N/2 occurences.
 
-It workds on the fact that if an element occurs more than N/2 times, it means that the remaining elements other than this would definitely be less than N/2:
+It works on the fact that if an element occurs more than N/2 times, it means that the remaining elements other than this would definitely be less than N/2:
 - First, choose a candidate from the given set of elements if it is the same as the candidate element, increase the votes. Otherwise, decrease the votes if votes become 0, select another new element as the new candidate. 
 - if it is not given that majority element exists, we must loop through the array again and count the occurences of candidates to make sure that it is a majority element
 ### Intuition Behind Working:
