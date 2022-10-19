@@ -2,6 +2,7 @@
 - Linked Lists
 - Dynamic Programming
 - Greedy Algorithm
+- Union Find
 
 ## Top 100 liked question set (order from easy to hard):
 Link: https://leetcode.com/problem-list/top-100-liked-questions/?sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D
@@ -80,9 +81,17 @@ Backtrack(x)
 ````
 
 # Data Structures
+## Heap:
+A special Tree-based data structure in which the tree is a complete binary tree
+1. Max-Heap: In a Max-Heap the key present at the root node must be greatest among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree.
 
+2. Min-Heap: In a Min-Heap the key present at the root node must be minimum among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree.
+
+## Disjoint-set data structure
+a data structure that keeps track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets
 # Computational techniques
 ## Sliding Window
+---
 https://www.geeksforgeeks.org/window-sliding-technique/
 
 aims to reduce the use of nested loop and replace it with a single loop, thereby reducing the time complexity
@@ -100,3 +109,11 @@ Imagine we have 2 runners one fast and one slow, running down the nodes of the L
 ## Tail Recursion
 A specific form of recursing where the recursive call is the last action in the function. The benefit of tail recursion is that for certain programming languages such as c++ the complier could optimize the memory allocation of call stack by reusing the same space for every recursive call, rather than creating the space for each one, allowing one to obtain the constant space complexity O(1) for the overhead of the recursive calls.
 - not supported by python or java
+
+## Union find
+---
+An algorithm that performs two useful operations on a disjoint-set data structure:
+- **Find**: Determine which subset a particular element is in. This can be used for determining if two elements are in the same subset
+- **Union**: Join two subsets into a single subset. Here first we have to check if the two subsets belong to the same set. If no, then we cannot perform union
+
+Link: https://www.geeksforgeeks.org/union-find/
