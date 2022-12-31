@@ -87,6 +87,12 @@ A special Tree-based data structure in which the tree is a complete binary tree
 
 2. Min-Heap: In a Min-Heap the key present at the root node must be minimum among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree.
 
+## Priority Queue
+an extension of `queue` with additional properties:
+- every item has a priority associated with it
+- an element with high priority is dequeued before an element with low priority
+- if two elements have the same priority, they are served according to their order in the queue
+
 ## Disjoint-set data structure
 a data structure that keeps track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets
 # Computational techniques
